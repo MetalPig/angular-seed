@@ -4,12 +4,28 @@
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/topcoat-mobile-dark.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center full">
+        <h1 class="topcoat-navigation-bar__title">Jo's App</h1>
+    </div>
+</div>
+
+
+<div class="topcoat-button-bar">
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button" onclick ="window.location.href='#/view1'">View 1</button>
+  </div>
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button"onclick ="window.location.href='#/view2'">View 2</button>
+  </div>
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button" onclick ="window.location.href='#/view3'">View 3</button>
+  </div>
+</div>
 
   <div ng-view></div>
 
